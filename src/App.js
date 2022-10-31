@@ -1,10 +1,11 @@
 import React,{useEffect} from 'react'
 import { useDispatch } from 'react-redux';
-import Footer from './components/Footer';
 import { darkTheme, lightTheme } from './redux/themeSlice';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 function App() {
   // const dispatch = useDispatch();
@@ -21,9 +22,10 @@ function App() {
       
         <Routes>
           <Route element={<Home />} exact path='/' />
-          {/* <Route element={<Projects />} path='/projects' /> */}
+          <Route element={<Login />} path='/login' />
+          <Route element={<SignUp />} path='/register' />
         </Routes>
-      <Footer />
+      
       </Router>
   )
 }

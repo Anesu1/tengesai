@@ -5,6 +5,8 @@ import FeaturedListing from '../components/FeaturedListing';
 import Header from '../components/Header';
 import LatestAdded from '../components/LatestAdded';
 import LatestBlog from '../components/LatestBlog';
+
+import Footer from '../components/Footer';
 import Partners from '../components/Partners';
 
 function Home() {
@@ -17,6 +19,7 @@ function Home() {
         <LatestBlog />
         <LatestAdded />
         <Partners />
+        <Footer />
     </>
   )
 }

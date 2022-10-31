@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.79184963.css",
-    "main.js": "/static/js/main.55757213.js",
-    "static/media/FiraCode-Bold.ttf": "/static/media/FiraCode-Bold.160ed1ac4e45a09b43b5.ttf",
-    "static/media/FiraCode-SemiBold.ttf": "/static/media/FiraCode-SemiBold.22b9da93a0f5246491ab.ttf",
-    "static/media/FiraCode-Regular.ttf": "/static/media/FiraCode-Regular.fc45da4c3e5b90c232a2.ttf",
+    "main.css": "/static/css/main.ea440390.css",
+    "main.js": "/static/js/main.b0ff8f30.js",
+    "static/media/EncodeSansCondensed-SemiBold.ttf": "/static/media/EncodeSansCondensed-SemiBold.34f2a4819824e0351461.ttf",
+    "static/media/Nunito-Regular.ttf": "/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
+    "static/media/Nunito-SemiBold.ttf": "/static/media/Nunito-SemiBold.77c1e330694154d3efed.ttf",
+    "static/media/Nunito-Bold.ttf": "/static/media/Nunito-Bold.f4338623f94e6079de97.ttf",
     "index.html": "/index.html",
-    "main.79184963.css.map": "/static/css/main.79184963.css.map",
-    "main.55757213.js.map": "/static/js/main.55757213.js.map"
+    "main.ea440390.css.map": "/static/css/main.ea440390.css.map",
+    "main.b0ff8f30.js.map": "/static/js/main.b0ff8f30.js.map"
   },
   "entrypoints": [
-    "static/css/main.79184963.css",
-    "static/js/main.55757213.js"
+    "static/css/main.ea440390.css",
+    "static/js/main.b0ff8f30.js"
   ]
 }
