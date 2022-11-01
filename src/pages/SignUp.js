@@ -5,15 +5,51 @@ import * as Yup from 'yup';
 import { Button, Checkbox, Container, FormHelperText, Grid, Link, TextField, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-// import { Facebook as FacebookIcon } from '../icons/facebook';
-import {AiOutlineGoogle} from 'react-icons/ai'
+import PhoneNumber from '../styled/PhoneNumber';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+  background:${props => props.theme.color.green1};
+  height:100vh;
+  h4,p{
+    color:#ffffff;
+  }
+  .MuiButtonBase-root{
+    color:#ffffff;
+  }
+  button{
+    background:#ffffff;
+    color:${props => props.theme.color.green1} !important;
+    font-weight:900;
+    &:hover{
+      opacity:0.8;
+      background-color:#ffffff;
+    }
+  }
+  .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color:#ffffff !important;
+  }
+  .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color:#ffffff;
+  }
+  .css-66npy3-MuiTypography-root-MuiLink-root{
+    color:#6c6c6c;
+    text-decoration:none;
+  }
+  .css-1atbtaw-MuiTypography-root-MuiLink-root{
+    color:#6c6c6c;
+  }
+  .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+    color:#ffffff;
+  }
+`
 
 const SignUp = () => {
     const navigate = useNavigate()
   const formik = useFormik({
     initialValues: {
       email: '',
-      password: ''
+      username: ''
     },
     validationSchema: Yup.object({
       email: Yup
@@ -21,10 +57,10 @@ const SignUp = () => {
         .email('Must be a valid email')
         .max(255)
         .required('Email is required'),
-      password: Yup
+      username: Yup
         .string()
         .max(255)
-        .required('Password is required')
+        .required('UserName is required')
     }),
     onSubmit: () => {
         navigate('/')
@@ -32,7 +68,7 @@ const SignUp = () => {
   });
 
   return (
-    <>
+    <Wrapper>
       
       <Box
         component="main"
@@ -61,40 +97,17 @@ const SignUp = () => {
                 color="textPrimary"
                 variant="h4"
               >
-                Create a new account
+                OneAll Market
               </Typography>
               <Typography
                 color="textSecondary"
                 gutterBottom
                 variant="body2"
               >
-                Use your email to create a new account
+                Buying and Selling Made Easy
               </Typography>
             </Box>
-            <TextField
-              error={Boolean(formik.touched.firstName && formik.errors.firstName)}
-              fullWidth
-              helperText={formik.touched.firstName && formik.errors.firstName}
-              label="First Name"
-              margin="normal"
-              name="firstName"
-              onBlur={formik.handleBlur}
-              onChange={formik.handleChange}
-              value={formik.values.firstName}
-              variant="outlined"
-            />
-            <TextField
-              error={Boolean(formik.touched.lastName && formik.errors.lastName)}
-              fullWidth
-              helperText={formik.touched.lastName && formik.errors.lastName}
-              label="Last Name"
-              margin="normal"
-              name="lastName"
-              onBlur={formik.handleBlur}
-              onChange={formik.handleChange}
-              value={formik.values.lastName}
-              variant="outlined"
-            />
+            
             <TextField
               error={Boolean(formik.touched.email && formik.errors.email)}
               fullWidth
@@ -109,18 +122,20 @@ const SignUp = () => {
               variant="outlined"
             />
             <TextField
-              error={Boolean(formik.touched.password && formik.errors.password)}
+              error={Boolean(formik.touched.username && formik.errors.username)}
               fullWidth
-              helperText={formik.touched.password && formik.errors.password}
-              label="Password"
+              helperText={formik.touched.username && formik.errors.username}
+              label="UserName"
               margin="normal"
-              name="password"
+              name="username"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
-              type="password"
-              value={formik.values.password}
+              type="text"
+              value={formik.values.username}
               variant="outlined"
             />
+            <PhoneNumber />
+            
             <Box
               sx={{
                 alignItems: 'center',
@@ -190,7 +205,7 @@ const SignUp = () => {
           </form>
         </Container>
       </Box>
-    </>
+    </Wrapper>
   );
 };
 

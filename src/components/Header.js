@@ -135,10 +135,10 @@ function Header() {
             </li>
             
             <li>
-                <a href="#">
+                <Link to='/register'>
                     <HiOutlineUserCircle />
                     <span>Sign up</span>
-                </a>
+                </Link>
             </li>
         </ul>
         

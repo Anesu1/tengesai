@@ -6,7 +6,42 @@ import { Button, Container, Grid, Link, TextField, Typography } from '@mui/mater
 import Box from '@mui/material/Box';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 // import { Facebook as FacebookIcon } from '../icons/facebook';
-import {AiOutlineGoogle} from 'react-icons/ai'
+import {AiOutlineGoogle} from 'react-icons/ai';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+  background:${props => props.theme.color.green1};
+  height:100vh;
+  h4,p{
+    color:#ffffff;
+  }
+  .MuiButtonBase-root{
+    color:#ffffff;
+  }
+  button{
+    background:#ffffff;
+    color:${props => props.theme.color.green1} !important;
+    font-weight:900;
+    &:hover{
+      opacity:0.8;
+      background-color:#ffffff;
+    }
+  }
+  .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color:#ffffff !important;
+  }
+  .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color:#ffffff;
+  }
+  .css-66npy3-MuiTypography-root-MuiLink-root{
+    color:#6c6c6c;
+    text-decoration:none;
+  }
+  .css-1atbtaw-MuiTypography-root-MuiLink-root,
+  .css-mvzs9h-MuiTypography-root-MuiLink-root{
+    color:#6c6c6c;
+  }
+`
 
 const Login = () => {
     const navigate = useNavigate()
@@ -32,7 +67,7 @@ const Login = () => {
   });
 
   return (
-    <>
+    <Wrapper>
       
       <Box
         component="main"
@@ -61,7 +96,7 @@ const Login = () => {
                 color="textPrimary"
                 variant="h4"
               >
-                Sign in
+                AllOne Market
               </Typography>
              
             </Box>
@@ -178,7 +213,7 @@ const Login = () => {
           </form>
         </Container>
       </Box>
-    </>
+    </Wrapper>
   );
 };
 
