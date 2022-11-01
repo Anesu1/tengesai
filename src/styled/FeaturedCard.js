@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   position: relative;
   width:48%;
   margin-bottom:20px;
+  @media(min-width:768px){
+    max-width:350px;
+    margin:0 20px 20px 20px;
+  }
   .top-label {
     background: ${(props) => props.theme.color.green};
     width: 29px;
@@ -45,11 +49,14 @@ const Wrapper = styled.div`
     width:100%;
     background:${props => props.bgImage};
     background-size:cover;
+    @media(min-width:768px){
+      height:200px;
+    }
   }
   .bottom {
     background: ${(props) => props.theme.color.green};
     color: #fff;
-    border-radius:5px;
+    border-radius:4px;
     padding:10px;
     .top-text{
         display:flex;

@@ -26,6 +26,10 @@ function Partners() {
         <div className="inner">
           <PartnersCard />
           <PartnersCard />
+          <PartnersCard />
+          <PartnersCard />
+          <PartnersCard />
+          <PartnersCard />
         </div>
     </Wrapper>
   )
