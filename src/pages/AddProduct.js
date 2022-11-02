@@ -21,6 +21,7 @@ const Wrapper = styled.section`
       width:100%;
       justify-content:space-between;
       align-items:center;
+      margin-bottom:30px;
       background:${props => props.theme.color.green1};
       svg{
         margin:5%;
@@ -83,7 +84,7 @@ const Wrapper = styled.section`
         .MuiFormControl-root {
         width: 100%;
         margin:0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         max-width:500px;
         input,
         label {
@@ -91,14 +92,18 @@ const Wrapper = styled.section`
           font-family: ${(props) => props.theme.fam.regular} !important;
         }
         .MuiInputBase-root {
+
           &:before {
-            border-bottom: 1px solid ${(props) => props.color} !important;
+            border-bottom: 1px solid ${(props) => props.theme.color.green1} !important;
           }
         }
+        .css-1ptx2yq-MuiInputBase-root-MuiInput-root:after,.css-8q2m5j-MuiInputBase-root-MuiInput-root:after,.css-a3l6o-MuiInputBase-root-MuiInput-root-MuiSelect-root:after{
+          border-bottom:${props => props.theme.color.green1};
+        }
         [data-shrink="true"] {
-          color: ${(props) => props.theme.color.blue} !important;
+          color: ${(props) => props.theme.color.green1} !important;
           &:after {
-            border: ${(props) => props.theme.color.blue};
+            border: ${(props) => props.theme.color.green1} !important;
           }
         }
       }

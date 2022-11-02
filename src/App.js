@@ -9,6 +9,7 @@ import SignUp from './pages/SignUp';
 import ShoppingCart from './pages/ShoppingCart';
 import AddProduct from './pages/AddProduct';
 import ProductDetails from './pages/ProductDetails';
+import Profile from './pages/Profile'
 
 function App() {
   // const dispatch = useDispatch();
@@ -30,6 +31,7 @@ function App() {
           <Route element={<ShoppingCart />} path='/cart' />
           <Route element={<AddProduct />} path='/addproduct' />
           <Route element={<ProductDetails />} path='/details' />
+          <Route element={<Profile />} path='/profile' />
         </Routes>
       
       </Router>
