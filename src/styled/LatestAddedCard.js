@@ -4,14 +4,15 @@ import styled from "styled-components";
 import Paragraph from "./Paragraph";
 
 const Wrapper = styled.div`
-  box-shadow: 0px 1px 0px 0px rgb(0 0 0 / 25%);
+  box-shadow: 0px 1px 0px 0px rgb(0, 0, 0, 25%);
   border-radius: 5px;
   background: #ffffff;
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 370px;
+  min-width: 350px;
+  margin-bottom:20px;
     margin-right: 10px;
   .top-img {
-    height: 150px;
+    height: 200px;
     width: 100%;
     background: url('${(props) => props.bgImage}');
     background-size: cover;
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
     h4 {
       font-family: ${(props) => props.theme.fam.bold};
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       color: ${(props) => props.theme.color.black};
     }
     p {

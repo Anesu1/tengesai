@@ -7,7 +7,9 @@ const Wrapper = styled.footer`
   padding: 5%;
   text-align: center;
   background: ${(props) => props.bgColor};
-
+  @media(min-width:992px){
+    padding:5% 10%;
+  }
   p {
     font-size: 20px;
     font-family: ${(props) => props.theme.fam.regular};

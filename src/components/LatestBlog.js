@@ -6,13 +6,16 @@ import LatestAddedCard from '../styled/LatestAddedCard';
 const Wrapper = styled.section`
     padding:5%;
     background:${props => props.theme.color.white};
+    @media(min-width:992px){
+      padding:5% 10%;
+    }
     h2{
         margin-bottom:30px;
     }
     .inner{
-      display: -webkit-box;
+      display: flex;
       justify-content: space-between;
-    overflow-x: scroll;
+    flex-wrap:wrap;
     display:flex;
       -webkit-box-pack: justify;
 

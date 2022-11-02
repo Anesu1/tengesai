@@ -14,8 +14,10 @@ const Wrapper = styled.div`
   width:48%;
   margin-bottom:20px;
   @media(min-width:768px){
-    max-width:350px;
-    margin:0 20px 20px 20px;
+    width:31%;
+  }
+  @media(min-width:992px){
+    width:24%;
   }
   .top-label {
     background: ${(props) => props.theme.color.green};
@@ -86,10 +88,7 @@ const Wrapper = styled.div`
 function FeaturedCard({bgImage, description}) {
   return (
     <Wrapper bgImage={"./images/mota.webp"}>
-      <div className="top-label">
-        <MdLabel />
-        <HiStar />
-      </div>
+      
 
       <div className="top-img"></div>
       <div className="bottom">

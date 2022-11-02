@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     overflow:hidden;
     width:60%;
     border-radius:3px;
-    min-width: 250px;
+    min-width: 280px;
     max-width: 100%;
     margin: 0 2% 10px 0;
     border-radius: 6px;

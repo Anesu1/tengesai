@@ -93,7 +93,7 @@ const Wrapper = styled.section`
 padding: 30px 35px 25px 35px;
     }
     @media(min-width:992px){
-      left:20%;
+      left:23%;
       
     }
     h3{

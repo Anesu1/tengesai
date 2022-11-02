@@ -6,6 +6,9 @@ import PartnersCard from '../styled/PartnersCard';
 const Wrapper = styled.section`
     padding:5%;
     background:${props => props.theme.color.white};
+    @media(min-width:992px){
+      padding:5% 10%;
+    }
     h2{
       margin-bottom:20px;
     }

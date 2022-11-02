@@ -16,6 +16,9 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media(min-width:992px){
+    padding:0 10%;
+  }
   img {
     width: 130px;
   }
@@ -31,7 +34,7 @@ const Wrapper = styled.header`
         align-items:center;
     }
     li {
-      margin-left: 12px;
+      margin-left: 4px;
       min-width: 15%;
       &:first-child,
       &:nth-child(4) {
@@ -40,7 +43,7 @@ const Wrapper = styled.header`
           display: block;
         }
       }
-      &:last-child,
+      
       &:nth-child(5) {
         @media (min-width: 992px) {
           display: none;
@@ -61,10 +64,10 @@ const Wrapper = styled.header`
             justify-content: center;
             min-width: 100px;
             background: ${(props) => props.theme.color.orange};
-            height: 35px;
+            height: 30px;
             margin-top: 4px;
             margin-bottom: 4px;
-            margin-right:30px;
+            margin-right:80px;
             padding: 6px 10px;
             border-radius: 5px;
             span {

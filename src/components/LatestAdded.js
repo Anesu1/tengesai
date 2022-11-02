@@ -5,6 +5,9 @@ import Heading from '../styled/Heading';
 
 const Wrapper = styled.section`
     padding:5%;
+    @media(min-width:992px){
+        padding:5% 10%;
+    }
     h2{
         margin-bottom:20px;
     }
