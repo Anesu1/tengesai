@@ -8,13 +8,15 @@ import LatestBlog from '../components/LatestBlog';
 
 import Footer from '../components/Footer';
 import Partners from '../components/Partners';
+import MaPartners from '../components/MaPartners';
 
 function Home() {
   return (
     <>
         <Header />
         <Banner />
-        {/* <Discover /> */}
+        <Discover />
+        {/* <MaPartners /> */}
         <FeaturedListing />
         <LatestBlog />
         <LatestAdded />

@@ -7,7 +7,7 @@ export default {
     },
     color:{
         green:"#74A822",
-        green1:"rgb(75, 148, 125)",
+        green1:"#4b947d",
         orange:"#FF870C",
         black:"#111",
         white:"#f9f7f6",
